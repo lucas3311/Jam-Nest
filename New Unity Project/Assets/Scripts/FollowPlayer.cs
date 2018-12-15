@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
+    public float damping = 1;
+
     private GameObject target;
-    Vector3 offset;
+    private Vector3 offset;
 
     void Start()
     {
@@ -18,6 +20,7 @@ public class FollowPlayer : MonoBehaviour
     void LateUpdate()
     {
         Vector3 desiredPosition = target.transform.position + offset;
-        transform.position = desiredPosition;
+        Vector3 position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime * damping);
+        transform.position = position;
     }
 }
