@@ -1242,8 +1242,8 @@ GameObject:
   - component: {fileID: 1703575550847524459}
   - component: {fileID: 6467672490561616337}
   m_Layer: 0
-  m_Name: Character 2
-  m_TagString: Untagged
+  m_Name: Character TRUE
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1367,8 +1367,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2300000, guid: 453ad5ac42dba3e46b3faba4c752c981, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 453ad5ac42dba3e46b3faba4c752c981, type: 3}
 --- !u!1 &1068316102 stripped
 GameObject:
