@@ -177,7 +177,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 53bad3a24a37276428f9192902c41395, type: 2}
+  - {fileID: 2100000, guid: 453ad5ac42dba3e46b3faba4c752c981, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -909,6 +909,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4488750915971737469}
   - component: {fileID: 7235349254002000919}
+  - component: {fileID: 7080801677754713186}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -999,6 +1000,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.0024202466, y: 0.00000011920929, z: 0.0011584759}
     m_Extent: {x: 0.2990699, y: 0.9291211, z: 1.1416998}
   m_DirtyAABB: 0
+--- !u!136 &7080801677754713186
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6740139236297660908}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.59
+  m_Height: 2.12
+  m_Direction: 2
+  m_Center: {x: 1.9257449, y: -0.014999603, z: 0.5123361}
 --- !u!1 &7150059424253743900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1322,17 +1337,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2300000, guid: 453ad5ac42dba3e46b3faba4c752c981, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 453ad5ac42dba3e46b3faba4c752c981, type: 3}
---- !u!4 &1068149222 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: 453ad5ac42dba3e46b3faba4c752c981,
-    type: 3}
-  m_PrefabInstance: {fileID: 1068282726}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1068316102 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 453ad5ac42dba3e46b3faba4c752c981,
+    type: 3}
+  m_PrefabInstance: {fileID: 1068282726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1068149222 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 453ad5ac42dba3e46b3faba4c752c981,
     type: 3}
   m_PrefabInstance: {fileID: 1068282726}
   m_PrefabAsset: {fileID: 0}
