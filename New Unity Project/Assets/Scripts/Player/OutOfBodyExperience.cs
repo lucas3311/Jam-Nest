@@ -9,11 +9,13 @@ public class OutOfBodyExperience : MonoBehaviour
     // - o target do controle é assumido para o espírito
     // - uma segunda camera é criada e passa a seguir e olhar para o espírito
 
-
     public void ReleaseSpirit(GameObject spirit, GameObject body)
     {
         spirit.transform.position = body.transform.position + Vector3.forward * 1;
         spirit.SetActive(true);
+
+        body.GetComponent<PlayerProperties>().camera.SetActive(false);
+        spirit.GetComponent<SpiritProperties>().camera.SetActive(true);
 
         Debug.Log("Soltei espirito");
     }
@@ -24,6 +26,9 @@ public class OutOfBodyExperience : MonoBehaviour
 
     public void RetrieveSpirit(GameObject body, GameObject spirit)
     {
+        body.GetComponent<PlayerProperties>().camera.SetActive(true);
+        spirit.GetComponent<SpiritProperties>().camera.SetActive(false);
+
         spirit.SetActive(false);
 
         Debug.Log("voltei para corpo");

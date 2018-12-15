@@ -29,12 +29,14 @@ public class Controls : MonoBehaviour
 
     void LateUpdate()
     {
+        // Movimentação
         var z = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
         var y = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
 
         currentState.transform.Rotate(0, 0, z);
         currentState.transform.Translate(0, -y, 0);
 
+        // Mecânica do espírito
         if (Input.GetKeyDown(KeyCode.F))
         {
             if(currentState == body)
