@@ -23,7 +23,6 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
-*.VC.db
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -36,5 +35,6 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-# Crashlytics generated file
-Assets/StreamingAssets/crashlytics-build.properties
+# File extensions and files specific to our project
+UnidosDoCanarinho/Assets/StreamingAssets/Log/Log.txt
+UnidosDoCanarinho/Assets/StreamingAssets/Log/Log.txt.meta
